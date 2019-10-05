@@ -1,4 +1,4 @@
-import tensorflow as tf // defined tf obj of tensorflow lib
+import tensorflow as tf ## defined tf obj of tensorflow lib
 hello=tf.constant("Hello World")
 print('start')
 sess=tf.session()
