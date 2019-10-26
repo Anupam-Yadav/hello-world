@@ -21,6 +21,7 @@ n_samples = train_X.shape[0]
 # tf Graph Input
 X = tf.placeholder("float")
 Y = tf.placeholder("float")
+Z = tf.placeholder("float")
 
 # Set model weights
 W = tf.Variable(rng.randn(), name="weight")
@@ -37,6 +38,7 @@ optimizer = tf.train.GradientDescentOptimizer(learning_rate).minimize(cost)
 
 # Initialize the variables (i.e. assign their default value)
 init = tf.global_variables_initializer()
+Z = tf.add(tf.multiply(X, W), b)
 
 # Start training
 with tf.Session() as sess:
