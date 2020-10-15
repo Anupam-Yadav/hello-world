@@ -6,7 +6,7 @@ import numpy
 import matplotlib.pyplot as plt
 rng = numpy.random
 
-# Parameters
+# Parameters defaults
 learning_rate = 0.01
 training_epochs = 1000
 display_step = 50
