@@ -8,7 +8,7 @@ from tensorflow.python.ops import resources
 import os
 os.environ["CUDA_VISIBLE_DEVICES"] = ""
 
-# Import MNIST data
+# Import MNIST data to be send
 from tensorflow.examples.tutorials.mnist import input_data
 mnist = input_data.read_data_sets("/tmp/data/", one_hot=False)
 
